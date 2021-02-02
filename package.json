@@ -1,0 +1,26 @@
+{
+  "name": "cap-messaging",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4",
+    "express": "^4",
+    "@sap/xb-msg-amqp-v100": "latest"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.2.0"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "messaging": {
+        "kind": "enterprise-messaging"
+      }
+    }
+  }
+}
